@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: slategrey;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.cbc {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+
+  width: 80vw;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  background-color: gray;
+  position: relative;
+}
+
+.cbc a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.menu li a:hover {
+  background: black;
+
+  color: white;
+}
+
+.menu li ul {
+  list-style: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  display: none;
+}
+
+.menu li:hover ul {
+  display: block;
+  overflow: auto;
+  height: 150px;
+
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 150px;
+  align-items: center;
+}
+
+.conteudo {
+  width: 80vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  background-color: white;
+}
+.perfil {
+  max-width: 200px;
+  width: 50%;
+  border-radius: 100px;
+  margin: 20px;
+  float: left;
+  position: relative;
+}
+.description {
+  display: inline-block;
+
+  padding: 20px;
+  font-size: 20px;
+  width: 60%;
+}
+.habilidades {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+.habilidades p,
+.experiencia p {
+  text-align: left;
+}
+.experiencia {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  width: 210px;
+  margin: 20px;
+}
+.experiencia a {
+  text-decoration: none;
+  color: black;
+}
+
+.techs img {
+  width: 36px;
+}
+
+/* projetos */
+.conteudoProjetos {
+  width: 80vw;
+
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+.conteudoProjetos a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.card img {
+  height: 50%;
+  margin: 10px;
+}
+.card h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card p {
+  padding: 5px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.9);
+}
+.description2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 510px) {
+  .cbc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+
+    width: 80vw;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .description {
+    width: 100%;
+  }
+}
