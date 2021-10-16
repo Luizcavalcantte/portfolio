@@ -109,6 +109,12 @@ let projetos = [
     link: "https://luizcavalcantte.github.io/pagina-de-captura/",
     img: "https://user-images.githubusercontent.com/85976619/133872065-5a156492-7d80-4a57-b706-ef98ab7771f9.jpg",
   },
+  {
+    nome: "Pedra papel tesoura",
+    description: "jogo classico",
+    link: "https://luizcavalcantte.github.io/Pedra-papel-tesoura/",
+    img: "https://user-images.githubusercontent.com/85976619/137576246-083d7fe4-5126-437b-abf8-718b4535e9ff.jpg",
+  },
 ];
 //pensando em colocar PROJETOS em um json e tirar essa bagunça daqui...
 
